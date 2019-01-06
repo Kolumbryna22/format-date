@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha index.test.js",
-    "test:watch": "mocha -w index.test.js"
+    "test:watch": "mocha -w index.test.js",
+    "test-total": "mocha calculateTotalPoints.test.js"
   },
   "keywords": [],
   "author": "",
