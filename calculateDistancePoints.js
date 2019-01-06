@@ -2,7 +2,7 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
     var points = hillSize === 'mamute' ? 120 : 60;
     var deltaDistance = distance - kPoint;
 
-    switch(hillsize) {
+    switch(hillSize) {
         case 'normal':
             points += deltaDistance * 2;
             break;
