@@ -13,8 +13,19 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
             points += deltaDistance * 1.2;
             break;        
     };
+    
+    points = roundUp(points, 1);
 
     return points;
 };
+
+function roundUp(num, precision) {
+    var roundValue;
+
+    precision = Math.pow(10, precision);
+    roundValue = Math.ceil(num * precision) / precision;
+
+    return roundValue;
+}
 
 module.exports = calculateDistancePoints;
